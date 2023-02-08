@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    def cmd = 'git rev-list HEAD --count'
-    def gitVersion = cmd.execute().text.trim().toInteger()
+//    def cmd = 'git rev-list HEAD --count'
+//    def gitVersion = cmd.execute().text.trim().toInteger()
 
     compileSdkVersion 28
     buildToolsVersion "25.0.3"
@@ -10,8 +10,8 @@ android {
         applicationId "com.netease.open.pocoservice"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode gitVersion
-        versionName "1.0.0." + gitVersion
+        versionCode 1
+        versionName "1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
